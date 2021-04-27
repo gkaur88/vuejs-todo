@@ -1,0 +1,272 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-27T17:15:00.190Z",
+        "line": 24,
+        "name": "Navigate to Vue.js todos and manage list",
+        "description": "",
+        "id": "explore-how-a-user-can-manage-todo-list;navigate-to-vue.js-todos-and-manage-list;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7914397300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is Open",
+            "match": {
+              "location": "com.todos.stepDefinitions.CreateTodoSteps.browserIsOpen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2506757200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Website content is loaded",
+            "match": {
+              "location": "com.todos.stepDefinitions.CreateTodoSteps.websiteContentIsLoaded()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2504002100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify Todo list textbox is enabled",
+            "match": {
+              "location": "com.todos.stepDefinitions.CreateTodoSteps.verifyTodoListTextboxIsEnabled()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2521001500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter \"Text-Reminder-1\" text and press enter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Text-Reminder-1\"",
+                  "offset": 6
+                }
+              ],
+              "location": "com.todos.stepDefinitions.CreateTodoSteps.enterTextAndPressEnter(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2417838300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify new todo text \"Text-Reminder-1\" note created and is in active state",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Text-Reminder-1\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.todos.stepDefinitions.CreateTodoSteps.verifyNewTodoTextNoteCreatedAndIsInActiveState(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2457541700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Enter \"Text-Reminder-2\" text and press enter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Text-Reminder-2\"",
+                  "offset": 6
+                }
+              ],
+              "location": "com.todos.stepDefinitions.CreateTodoSteps.enterTextAndPressEnter(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2462192900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Enter \"Text-Reminder-3\" text and press enter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Text-Reminder-3\"",
+                  "offset": 6
+                }
+              ],
+              "location": "com.todos.stepDefinitions.CreateTodoSteps.enterTextAndPressEnter(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2415001100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Verify that three todo text notes are created and all are in active state",
+            "match": {
+              "location": "com.todos.stepDefinitions.CreateTodoSteps.verifyThatThreeTodoTextNotesAreCreatedAndAllAreInActiveState()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2578692000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Verify that on selecting any todo text note it moves to completed label",
+            "match": {
+              "location": "com.todos.stepDefinitions.CreateTodoSteps.verifyThatOnSelectingAnyTodoTextNoteItMovesToCompletedLabel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2416988700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Verify that with click on Click Completed label the completed todo note is removed from completed note list",
+            "match": {
+              "location": "com.todos.stepDefinitions.CreateTodoSteps.verifyThatWithClickOnClickCompletedLabelTheCompletedTodoNoteIsRemovedFromCompletedNoteList()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2439877500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Verify that under All label only \u003c2\u003e todo notes exists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 34
+                }
+              ],
+              "location": "com.todos.stepDefinitions.CreateTodoSteps.verifyThatUnderAllLabelOnlyTodoNotesExists(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2425369000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Verify that under All label only \u003c2\u003e todo notes exists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 34
+                }
+              ],
+              "location": "com.todos.stepDefinitions.CreateTodoSteps.verifyThatUnderAllLabelOnlyTodoNotesExists(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2392793800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Verify todo-count text displays number of items left",
+            "match": {
+              "location": "com.todos.stepDefinitions.CreateTodoSteps.verifyTodoCountTextDisplaysNumberOfItemsLeft()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2572613000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Verify todo note can be destroyed and under All label only \u003c1\u003e todo notes exists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 60
+                }
+              ],
+              "location": "com.todos.stepDefinitions.CreateTodoSteps.verifyTodoNoteCanBeDestroyedAndUnderAllLabelOnlyTodoNotesExists(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2373511800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Verify that todo note can be edited through double click",
+            "match": {
+              "location": "com.todos.stepDefinitions.CreateTodoSteps.verifyThatTodoNoteCanBeEditedThroughDoubleClick()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 884604300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Close the browser",
+            "match": {
+              "location": "com.todos.stepDefinitions.CreateTodoSteps.closeTheBrowser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ToDoMVCUserScenario"
+          }
+        ]
+      }
+    ],
+    "name": "Explore How A User Can Manage Todo List",
+    "description": "",
+    "id": "explore-how-a-user-can-manage-todo-list",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/vuejsTodo.feature",
+    "tags": [
+      {
+        "name": "@ToDoMVCUserScenario",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

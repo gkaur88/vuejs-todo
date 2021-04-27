@@ -1,0 +1,15 @@
+2021-04-28 01:15:04 INFO  CreateTodoSteps:52 - VueJS Todos default page is launched
+2021-04-28 01:15:08 INFO  CreateTodoSteps:65 - Navigating to Todos list page..
+2021-04-28 01:15:10 INFO  CreateTodoSteps:73 - Verifying that todos list textbox is enabled..
+2021-04-28 01:15:13 INFO  CreateTodoSteps:81 - Creating first todo list..
+2021-04-28 01:15:15 INFO  CreateTodoSteps:89 - Verifying if first todo list text has been created and in active state..
+2021-04-28 01:15:18 INFO  CreateTodoSteps:81 - Creating first todo list..
+2021-04-28 01:15:20 INFO  CreateTodoSteps:81 - Creating first todo list..
+2021-04-28 01:15:23 INFO  CreateTodoSteps:97 - Verifying if three todo list text has been created and in active state..
+2021-04-28 01:15:25 INFO  CreateTodoSteps:105 - Move any todo note to complete..
+2021-04-28 01:15:28 INFO  CreateTodoSteps:116 - Verifying completed note and clearing list..
+2021-04-28 01:15:30 INFO  CreateTodoSteps:123 - Verifying available notes under All label..
+2021-04-28 01:15:32 INFO  CreateTodoSteps:123 - Verifying available notes under All label..
+2021-04-28 01:15:35 INFO  CreateTodoSteps:132 - Verifying todo-count text with number of items left..
+2021-04-28 01:15:37 INFO  CreateTodoSteps:139 - Verifying available notes under All label..
+2021-04-28 01:15:40 INFO  CreateTodoSteps:151 - Verifying edit to existing todo note..

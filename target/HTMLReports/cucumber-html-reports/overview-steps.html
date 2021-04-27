@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>vuejs-todos</td>
+        <td>1</td>
+      <td>28 Apr 2021, 01:15</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">com.todos.stepDefinitions.CreateTodoSteps.browserIsOpen()</td>
+              <td>1</td>
+              <td class="duration" data-value="7914397300">7.914</td>
+              <td class="duration" data-value="7914397300">7.914</td>
+              <td class="duration" data-value="7914397300">7.914</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.todos.stepDefinitions.CreateTodoSteps.closeTheBrowser()</td>
+              <td>1</td>
+              <td class="duration" data-value="884604300">0.884</td>
+              <td class="duration" data-value="884604300">0.884</td>
+              <td class="duration" data-value="884604300">0.884</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.todos.stepDefinitions.CreateTodoSteps.enterTextAndPressEnter(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="2480245366">2.480</td>
+              <td class="duration" data-value="2480245366">2.521</td>
+              <td class="duration" data-value="7440736100">7.440</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.todos.stepDefinitions.CreateTodoSteps.verifyNewTodoTextNoteCreatedAndIsInActiveState(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2417838300">2.417</td>
+              <td class="duration" data-value="2417838300">2.417</td>
+              <td class="duration" data-value="2417838300">2.417</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.todos.stepDefinitions.CreateTodoSteps.verifyThatOnSelectingAnyTodoTextNoteItMovesToCompletedLabel()</td>
+              <td>1</td>
+              <td class="duration" data-value="2578692000">2.578</td>
+              <td class="duration" data-value="2578692000">2.578</td>
+              <td class="duration" data-value="2578692000">2.578</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.todos.stepDefinitions.CreateTodoSteps.verifyThatThreeTodoTextNotesAreCreatedAndAllAreInActiveState()</td>
+              <td>1</td>
+              <td class="duration" data-value="2415001100">2.415</td>
+              <td class="duration" data-value="2415001100">2.415</td>
+              <td class="duration" data-value="2415001100">2.415</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.todos.stepDefinitions.CreateTodoSteps.verifyThatTodoNoteCanBeEditedThroughDoubleClick()</td>
+              <td>1</td>
+              <td class="duration" data-value="2373511800">2.373</td>
+              <td class="duration" data-value="2373511800">2.373</td>
+              <td class="duration" data-value="2373511800">2.373</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.todos.stepDefinitions.CreateTodoSteps.verifyThatUnderAllLabelOnlyTodoNotesExists(int)</td>
+              <td>2</td>
+              <td class="duration" data-value="2432623250">2.432</td>
+              <td class="duration" data-value="2432623250">2.439</td>
+              <td class="duration" data-value="4865246500">4.865</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.todos.stepDefinitions.CreateTodoSteps.verifyThatWithClickOnClickCompletedLabelTheCompletedTodoNoteIsRemovedFromCompletedNoteList()</td>
+              <td>1</td>
+              <td class="duration" data-value="2416988700">2.416</td>
+              <td class="duration" data-value="2416988700">2.416</td>
+              <td class="duration" data-value="2416988700">2.416</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.todos.stepDefinitions.CreateTodoSteps.verifyTodoCountTextDisplaysNumberOfItemsLeft()</td>
+              <td>1</td>
+              <td class="duration" data-value="2392793800">2.392</td>
+              <td class="duration" data-value="2392793800">2.392</td>
+              <td class="duration" data-value="2392793800">2.392</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.todos.stepDefinitions.CreateTodoSteps.verifyTodoListTextboxIsEnabled()</td>
+              <td>1</td>
+              <td class="duration" data-value="2504002100">2.504</td>
+              <td class="duration" data-value="2504002100">2.504</td>
+              <td class="duration" data-value="2504002100">2.504</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.todos.stepDefinitions.CreateTodoSteps.verifyTodoNoteCanBeDestroyedAndUnderAllLabelOnlyTodoNotesExists(int)</td>
+              <td>1</td>
+              <td class="duration" data-value="2572613000">2.572</td>
+              <td class="duration" data-value="2572613000">2.572</td>
+              <td class="duration" data-value="2572613000">2.572</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.todos.stepDefinitions.CreateTodoSteps.websiteContentIsLoaded()</td>
+              <td>1</td>
+              <td class="duration" data-value="2506757200">2.506</td>
+              <td class="duration" data-value="2506757200">2.506</td>
+              <td class="duration" data-value="2506757200">2.506</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>13</td>
+            <td>16</td>
+            <td class="duration">2.705</td>
+            <td class="duration">7.914</td>
+            <td class="duration">43.283</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
